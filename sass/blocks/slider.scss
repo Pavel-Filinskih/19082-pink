@@ -1,0 +1,87 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__item {
+  position: absolute;
+  width: 100%;
+}
+
+.slider__toggles {
+  padding: 10px;
+  text-align: center;
+
+  &--gray {
+    .slider__toggle {
+      border-color: $light-gray-color;
+
+      &--active {
+        border-color: $brand-color;
+      }
+    }
+  }
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 6px 5px;
+  background-color: rgba($brand-color, 0.3);
+  border-radius: 50%;
+  border: 3px solid $light-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($brand-color, 0.7);
+  }
+
+  &:active {
+    background-color: rgba($brand-color, 0.1);
+  }
+
+  &--active {
+    background-color: $light-color;
+    border-color: $brand-color;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 42px;
+  cursor: pointer;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  svg {
+    fill: rgba($brand-color, 0.3);
+  }
+
+  &:hover {
+     svg {
+       fill: rgba($brand-color, 0.6);
+     }
+   }
+
+  &:active {
+    svg {
+      fill: rgba($brand-color, 0.1);
+    }
+  }
+}

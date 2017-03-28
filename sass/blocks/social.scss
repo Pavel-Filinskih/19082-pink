@@ -1,0 +1,38 @@
+.social-links {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 0;
+}
+
+.social-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  margin: 0 6px;
+  font-size: 0;
+  border-radius: 50%;
+  border: 3px solid rgba($brand-color, 0.1);
+  background: #fff url('../img/icon-twitter.svg') center center no-repeat;
+
+  &:hover {
+    border-color: rgba($brand-color, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vk {
+    background-image: url('../img/icon-twitter.svg');
+  }
+
+  &--facebook {
+    background-image: url('../img/icon-facebook.svg');
+  }
+
+  &--youtube {
+    background-image: url('../img/icon-youtube.svg');
+  }
+}

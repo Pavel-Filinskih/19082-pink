@@ -1,0 +1,58 @@
+html,
+body {
+  min-width: 320px;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $brand-color;
+  background-color: $light-color;
+  
+  @include respond(desktop) {
+    font-size: $font-size-tablet;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.show-span {
+  display: none;
+  
+  &--mobile {
+    @include respond(mobile) {
+      display: inline;
+    }
+  }
+  
+  &--tablet {
+    @include respond(tablet) {
+      display: inline;
+    }
+  }
+  
+  &--desktop {
+    @include respond(desktop) {
+      display: inline;
+    }
+  }
+}
+
+@keyframes color_change {
+  0% {
+    color: rgba($light-color, 0.3);
+  }
+
+  50% {
+    color: rgba($light-color, 0.7);
+  }
+
+  100% {
+    color: rgba($light-color, 0.3);
+  }
+}
