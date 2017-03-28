@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Филинских](https://up.htmlacademy.ru/adaptive/10/user/19082).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
