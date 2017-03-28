@@ -1,0 +1,51 @@
+.input-list {
+  @include ul-clear;
+  position: relative;
+
+  @include respond(mobile) {
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba($brand-color, 0.1);
+  }
+
+  &--correct {
+    @include respond(tablet) {
+      padding-right: 11px;
+      padding-left: 20px;
+    }
+
+    @include respond(desktop) {
+      padding-right: 60px;
+      padding-left: 0px;
+    }
+  }
+
+  &--line {
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include respond(tablet) {
+      margin-bottom: 66px;
+    }
+  }
+}
+
+.input-list__item {
+  @include clearfix;
+  
+  &--line {
+    @include respond(mobile) {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &--underline {
+    border-bottom: 1px solid transparent;
+    text-align: left;
+    
+    @include respond(tablet) {
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba($brand-color, 0.1);
+    }
+  }
+}
