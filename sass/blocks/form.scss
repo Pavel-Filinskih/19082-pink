@@ -1,11 +1,11 @@
 .form__inner {
   @include container;
-  
+
   @include respond(mobile) {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   &--flex {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +33,7 @@
   margin-bottom: 60px;
   @include clearfix;
   flex-basis: 100%;
-  
+
   @include respond(mobile) {
     padding-left: $indent-help;
     padding-right: $indent-help;
@@ -50,7 +50,7 @@
 
   &--gray {
     background-color: $light-gray-color;
-    
+
     @include respond(tablet) {
       background-color: $light-color;
     }
@@ -58,7 +58,7 @@
 
   &--fieldset {
     position: relative;
-    
+
     @include respond(tablet) {
       border: 2px solid $gray-color;
     }
@@ -72,13 +72,13 @@
       flex-wrap: wrap;
       margin-bottom: 14px;
       align-items: center;
-      
+
       @include respond(tablet) {
         flex-wrap: nowrap;
         margin-bottom: 52px;
       }
     }
-    
+
     @include respond(tablet) {
       padding-right: 0;
       padding-left: 0;
@@ -92,7 +92,7 @@
         padding-left: 0;
       }
     }
-    
+
     @include respond(desktop) {
       flex-basis: 436px;
       box-sizing: border-box;
@@ -108,7 +108,7 @@
 
   &--application {
     margin-bottom: 35px;
-    
+
     @include respond(mobile) {
       padding-top: 30px;
       padding-bottom: 10px;
@@ -117,7 +117,7 @@
         margin-bottom: 20px;
       }
     }
-    
+
     @include respond(tablet) {
       order: 1;
       margin-bottom: 65px;
@@ -132,7 +132,7 @@
         }
       }
     }
-    
+
     @include respond(desktop) {
       flex-basis: 276px;
       padding-left: 78px;
@@ -150,7 +150,7 @@
   &--contacts {
     padding-top: 30px;
     margin-bottom: 35px;
-    
+
     .form__item {
       margin-bottom: 20px;
     }
@@ -192,7 +192,7 @@
   &--achievements {
     padding-bottom: 10px;
     margin-bottom: 0;
-    
+
     @include respond(tablet) {
       order: 3;
       margin-bottom: 65px;
@@ -223,7 +223,7 @@
     textarea {
       min-height: 200px;
     }
-    
+
     @include respond(mobile) {
       padding-top: 10px;
     }
@@ -260,7 +260,7 @@
 
 .form__item {
   display: block;
-  
+
   @include respond(desktop) {
     &:last-child {
       .form__label--checkbox {
@@ -327,7 +327,7 @@
     padding-left: 58px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
     @include respond(mobile) {
       padding-left: 68px;
     }
@@ -387,7 +387,7 @@
     padding-left: 68px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
     @include respond(tablet) {
       padding-left: 58px;
     }
@@ -455,7 +455,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  
+
   &--phone {
     @include respond(tablet) {
       padding-right: 80px;
@@ -464,7 +464,7 @@
       background-position: right 19px top 20px, 0 0;
     }
   }
-  
+
   &--email {
     @include respond(tablet) {
       padding-right: 80px;
@@ -483,7 +483,7 @@
   text-transform: uppercase;
   color: $main-brand-color;
   text-align: center;
-  
+
   @include respond(tablet) {
     position: absolute;
     top: -22px;
@@ -502,32 +502,16 @@
     padding-right: $indent-help;
     padding-left: $indent-help;
     margin: auto;
-    
+
     @include respond(mobile) {
       margin-bottom: 20px;
-    }
-
-    @include respond(tablet) {
-      order: 7;
-      flex-basis: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px;
-      padding-left: 0;
-      padding-right: 0;
-
-      .btn--submit {
-        margin-bottom: 0;
-        padding: 17px 55px;
-      }
     }
 
     @include respond(desktop) {
       margin-bottom: 0;
     }
   }
-  
+
   &--photo {
     @include respond(tablet) {
       padding-top: 0;
@@ -543,7 +527,7 @@
 
 .form__info {
   text-transform: uppercase;
-  
+
   @include respond(tablet) {
     font-size: 14px;
   }
@@ -558,7 +542,7 @@
 
   &--hidden {
     display: none;
-    
+
     @include respond(desktop) {
       display: inline;
     }

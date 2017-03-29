@@ -15,7 +15,7 @@
 
 .pop-up__inner {
   padding: $indent-help;
-  
+
   @include respond(tablet) {
     padding: 30px 70px 10px;
   }
@@ -40,14 +40,6 @@
       width: 460px;
     }
 
-    @include respond(desktop) {
-      width: 780px;
-
-      .btn--submit {
-        min-width: 460px;
-      }
-    }
-
     .pop-up__inner {
       padding-right: 30px;
       padding-left: 30px;
@@ -63,20 +55,6 @@
   &--failure {
     width: 320px;
 
-    @include respond(mobile) {
-      .btn--submit {
-        margin-bottom: 30px;
-      }
-    }
-
-    @include respond(tablet) {
-      width: 460px;
-
-      .btn--submit {
-        min-width: 300px;
-      }
-    }
-
     .pop-up__text {
       @include respond(tablet) {
         padding-right: 20px;
@@ -90,7 +68,7 @@
   margin-top: 20px;
   margin-bottom: 28px;
   font-size: 18px;
-  
+
   @include respond(tablet) {
     padding-right: 40px;
     padding-left: 40px;
@@ -109,7 +87,7 @@
   margin-top: 0;
   margin-bottom: 35px;
   font-size: 14px;
-  
+
   @include respond(mobile) {
     line-height: $line-height - 0.2;
   }
@@ -134,11 +112,5 @@
 
   &--gray {
     background-color: $light-gray-color;
-  }
-
-  .btn--submit {
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }

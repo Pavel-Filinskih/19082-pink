@@ -10,13 +10,13 @@
 
 .investigation__inner {
   @include container;
-  
+
   &.investigation__inner--timer {
     @include respond(tablet-only) {
       padding-top: 60px;
       padding-bottom: 50px;
     }
-    
+
     @include respond(desktop) {
       padding-top: 10px;
       padding-bottom: 70px;
@@ -33,7 +33,7 @@
   background: transparent url("../img/icon-timer.svg") 0 center no-repeat;
   -webkit-background-size: auto 276px;
   background-size: auto 276px;
-  
+
   @include respond(desktop) {
     width: 300px;
     height: 345px;
@@ -57,7 +57,7 @@
   border-radius: 50%;
   border: 15px solid $main-brand-color;
   background-color: $light-color;
-  
+
   @include respond(desktop) {
     width: 220px;
     height: 220px;
@@ -76,7 +76,8 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 1.25;
-  
+  color: $dark-color;
+
   @include respond(desktop) {
     margin-top: 92px;
     margin-bottom: 20px;
@@ -89,7 +90,7 @@
 
 .investigation__content {
   margin-left: 310px;
-  
+
   @include respond(desktop) {
     margin-left: 365px;
   }
@@ -99,7 +100,7 @@
   margin-top: 0;
   margin-bottom: 14px;
   line-height: 1.7;
-  
+
   @include respond(desktop) {
     padding-right: 45px;
     margin-bottom: 35px;

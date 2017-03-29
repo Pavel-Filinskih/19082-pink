@@ -46,7 +46,7 @@
     padding-bottom: 13px;
     color: $main-brand-color;
     border-color: $main-brand-color;
-    
+
     @include respond(tablet) {
       min-width: 260px;
       margin-bottom: 25px;
@@ -91,7 +91,7 @@
       background-color: $brand-color;
       opacity: 0.3;
     }
-    
+
     @include respond(tablet) {
       min-width: 260px;
       margin-bottom: 0;
@@ -109,7 +109,7 @@
     margin-top: 27px;
     margin-bottom: 28px;
     padding: 12px 20px;
-    
+
     @include respond(tablet) {
       min-width: 300px;
       margin-bottom: 45px;
@@ -137,5 +137,49 @@
     animation-name: color_change;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+  }
+}
+
+.btn--submit {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@include respond(desktop) {
+  width: 780px;
+
+  .btn--submit {
+    min-width: 460px;
+  }
+}
+
+@include respond(tablet) {
+  order: 7;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .btn--submit {
+    margin-bottom: 0;
+    padding: 17px 55px;
+  }
+}
+
+@include respond(tablet) {
+  width: 460px;
+
+  .btn--submit {
+    min-width: 300px;
+  }
+}
+
+@include respond(mobile) {
+  .btn--submit {
+    margin-bottom: 30px;
   }
 }
