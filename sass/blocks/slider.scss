@@ -71,17 +71,17 @@
 
 .slider-controls__control {
   position: absolute;
-  top: 0;
+  top: -32px;
   width: 22px;
   height: 42px;
   cursor: pointer;
 
   &--prev {
-    left: 0;
+    left: 8px;
   }
 
   &--next {
-    right: 0;
+    right: 12px;
   }
 
   svg {

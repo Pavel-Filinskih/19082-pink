@@ -9,7 +9,7 @@
 .reviews__inner {
   @include container;
   margin-bottom: 22px;
-  
+
   @include respond(tablet-only) {
     margin-bottom: 0;
   }
@@ -21,12 +21,12 @@
   padding-top: 50px;
   height: 230px;
   text-align: center;
-  
+
   @include respond(tablet) {
     padding-top: 27px;
     height: 225px;
   }
-  
+
   @include respond(desktop) {
     padding-top: 165px;
     width: 685px;
@@ -47,7 +47,7 @@
 
 .reviews__item {
   opacity: 0;
-  
+
   @include respond(tablet) {
     display: flex;
     flex-direction: column-reverse;
@@ -64,7 +64,7 @@
   font-size: 18px;
   font-weight: bold;
   color: $dark-color;
-  
+
   @include respond(tablet) {
     font-size: 20px;
     margin-bottom: 7px;
@@ -72,26 +72,30 @@
 
   @include respond(desktop) {
     font-size: 24px;
+    padding-top: 5px;
+    padding-right: 4px;
   }
 }
 
 .reviews__author-additional {
   font-weight: normal;
   font-size: 14px;
-  
+
   @include respond(mobile) {
     display: none;
   }
 
   @include respond(desktop) {
     font-size: 18px;
+    margin-top: -3px;
+    padding-right: 4px;
   }
 }
 
 .reviews__text {
   font-size: 14px;
   line-height: $line-height + 0.4;
-  
+
   @include respond(tablet) {
     font-size: 18px;
     line-height: $line-height;
@@ -99,7 +103,10 @@
   }
 
   @include respond(desktop) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    margin-top: 16px;
+    padding-right: 4px;
+    line-height: 1.7;
   }
 }
 
@@ -113,7 +120,7 @@
 
 .reviews__controls {
   display: none;
-  
+
   @include respond(desktop) {
     display: block;
   }

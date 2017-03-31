@@ -3,6 +3,10 @@
   vertical-align: top;
   text-align: center;
   font-size: 0;
+
+  @include respond(desktop) {
+    padding-right: 4px;
+  }
 }
 
 .social-link {

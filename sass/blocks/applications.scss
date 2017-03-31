@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   background-color: $body-bg-dark;
-  
+
   @include respond(mobile) {
     margin-left: -$indent-help;
     margin-right: -$indent-help;
@@ -28,10 +28,10 @@
   padding-right: 30px;
   padding-left: 30px;
   font-family: $font-family-light;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 40px;
   line-height: 1.2;
-  
+
   @include respond(tablet) {
     display: block;
   }
@@ -39,6 +39,7 @@
   @include respond(desktop) {
     margin-top: 110px;
     margin-bottom: 25px;
+    padding-right: 20px;
     font-size: 50px;
   }
 }
@@ -46,13 +47,21 @@
 .applications__list {
   @include ul-clear;
   text-align: center;
-  
+
   @include respond(tablet) {
     margin-bottom: 32px;
   }
 
   @include respond(desktop) {
     margin-bottom: 50px;
+
+    .applications__item:first-child {
+      margin-left: 27px;
+    }
+
+    .applications__item:last-child {
+      margin-right: 17px;
+    }
   }
 }
 
@@ -96,7 +105,7 @@
   padding-bottom: 30px;
   font-family: $font-family-light;
   line-height: $line-height;
-  
+
   @include respond(tablet) {
     margin-bottom: 48px;
     padding-left: 0;
@@ -107,6 +116,10 @@
   }
 
   @include respond(desktop) {
-    margin-bottom: 60px;
+    margin-left: 9px;
+    margin-bottom: 64px;
+    padding-top: 3px;
+    letter-spacing: 0;
+    font-size: 17px;
   }
 }

@@ -4,6 +4,7 @@
 
 .information__inner {
   @include container;
+  font-weight: 300;
 }
 
 .information__introduction {
@@ -35,7 +36,11 @@
     }
 
     @include respond(desktop) {
+      padding-top: 7px;
+      padding-left: 211px;
+      padding-right: 215px;
       font-size: 50px;
+      line-height: 1.18;
     }
   }
 }
@@ -137,8 +142,10 @@
     line-height: $line-height;
 
     @include respond(desktop) {
-      padding-left: 35px;
+      padding-left: 33px;
       padding-right: 35px;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
     }
   }
 }
@@ -151,7 +158,7 @@
   color: $dark-color;
 
   @include respond(desktop) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 30px;

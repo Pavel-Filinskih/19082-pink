@@ -1,7 +1,7 @@
 .page-footer {
   padding-top: 35px;
   text-align: center;
-  
+
   @include respond(desktop) {
     padding-top: 70px;
   }
@@ -31,33 +31,50 @@
     height: 40px;
     font-size: 0;
   }
-  
+
   @include respond(tablet) {
     float: left;
     width: 25%;
     margin-bottom: 19px;
   }
+
+  @include respond(desktop) {
+    a {
+      padding-left: 8px;
+    }
+  }
 }
 
 .page-footer__social {
   margin-bottom: 20px;
-  
+
   @include respond(tablet) {
     float: left;
     width: 50%;
     margin-top: 5px;
   }
+
+  @include respond(desktop) {
+    margin-top: 3px;
+  }
 }
 
 .page-footer__copyright {
   padding-top: 20px;
-  
+
   @include respond(tablet) {
     float: right;
     width: 25%;
     padding-top: 10px;
     margin-top: 5px;
     text-align: right;
+  }
+
+  @include respond(desktop) {
+    width: 20%;
+    padding-top: 8px;
+    margin-top: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -67,7 +84,7 @@
   width: 27px;
   height: 34px;
   margin-left: 11px;
-  
+
   svg {
     fill: $main-brand-color;
 

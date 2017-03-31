@@ -4,7 +4,7 @@
   margin-right: -$indent-help;
   min-height: 395px;
   overflow: hidden;
-  
+
   @include respond(tablet) {
     position: absolute;
     width: 100%;
@@ -15,8 +15,9 @@
   }
 
   @include respond(desktop) {
-    height: 645px;
-    bottom: 0;
+    height: 648px;
+    left: -4px;
+    bottom: -4px;
   }
 }
 
@@ -25,27 +26,27 @@
   bottom: 0;
   width: 258px;
   height: 286px;
-  
+
   @include respond(mobile-small) {
     right: 62px;
     transform: none;
   }
-  
+
   @include respond(mobile) {
     right: 50%;
     transform: translateX(50%);
   }
-  
+
   @include respond(tablet-only) {
     width: 700px;
     height: 545px;
     right: -3%;
   }
-  
+
   @include respond(desktop) {
     width: 1050px;
     height: 645px;
-    left: 4%;
+    left: 5%;
   }
 
   img {

@@ -42,7 +42,7 @@
 }
 
 @mixin respond($media) {
-  
+
   @if $media == mobile-small {
     @media only screen and (max-width: $bp-xsmall) { @content; }
   }
@@ -50,7 +50,7 @@
   @if $media == mobile {
     @media only screen and (max-width: $bp-small - 1) { @content; }
   }
-  
+
   @if $media == mobile-retina {
     @media only screen and (max-width: $bp-small - 1) and (min-resolution: 144dpi),
     (max-width: $bp-small - 1) and (min-resolution: 1.5dppx) { @content; }
@@ -59,20 +59,20 @@
   @else if $media == tablet {
     @media only screen and (min-width: $bp-small) { @content; }
   }
-  
+
   @else if $media == tablet-large {
     @media only screen and (min-width: $bp-small-middle-width) and (max-width: $bp-medium - 1) { @content; }
   }
-  
+
   @else if $media == tablet-only {
     @media only screen and (min-width: $bp-small) and (max-width: $bp-medium - 1) { @content; }
   }
-  
+
   @else if $media == tablet-only-retina {
     @media only screen and (min-width: $bp-small) and (max-width: $bp-medium - 1) and (min-resolution: 144dpi),
     (min-width: $bp-small) and (max-width: $bp-medium - 1) and (min-resolution: 1.5dppx) { @content; }
   }
-  
+
   @else if $media == desktop-small {
     @media only screen and (min-width: $bp-medium + 1) and (max-width: $bp-large) { @content; }
   }
@@ -80,12 +80,12 @@
   @else if $media == desktop {
     @media only screen and (min-width: $bp-medium) { @content; }
   }
-  
+
   @else if $media == desktop-retina {
     @media only screen and (min-width: $bp-medium) and (min-resolution: 144dpi),
     (min-width: $bp-medium) and (min-resolution: 1.5dppx) { @content; }
   }
-  
+
   @else if $media == desktop-all {
     @media only screen and (min-width: $bp-xlarge + 1) { @content; }
   }
@@ -97,13 +97,13 @@
   padding-right: $indent-help;
   padding-left: $indent-help;;
   @include clearfix;
-  
+
   @include respond(tablet-large) {
     padding: 0 2*$indent-help;
   }
 
   @include respond(desktop) {
-    max-width: 940px;
+    max-width: 960px;
     padding: 0;
   }
 }
