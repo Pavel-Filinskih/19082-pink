@@ -3,7 +3,7 @@
   width: 240px;
   height: 20px;
   margin: 35px auto 70px;
-  
+
   @include respond(mobile) {
     position: absolute;
     left: 0;
@@ -28,19 +28,19 @@
 
   &--crop {
     .scale-slider__point {
-      left: 80%;
+      left: 26%;
     }
   }
 
   &--brightness {
     .scale-slider__point {
-      left: 10%;
+      left: 87%;
     }
   }
 
   &--contrast {
     .scale-slider__point {
-      left: 45%;
+      left: 57%;
     }
   }
 }

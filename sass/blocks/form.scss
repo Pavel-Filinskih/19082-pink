@@ -188,9 +188,11 @@
 
     @include respond(desktop) {
       flex-wrap: nowrap;
+      margin-bottom: 61px;
+      padding-left: 65px;
 
       .form__label {
-        margin-top: 12px;
+        margin-top: 15px;
         margin-bottom: 0;
       }
     }
@@ -215,7 +217,9 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: 25px;
+      padding-top: 53px;
+      padding-left: 65px;
+      padding-bottom: 27px;
       margin-bottom: 65px;
     }
   }
@@ -241,6 +245,8 @@
     }
 
     @include respond(desktop) {
+      margin-bottom: 54px;
+
       textarea {
         min-height: 125px;
       }
@@ -260,7 +266,8 @@
     justify-content: space-between;
 
     .form__item {
-      width: 377px;
+      width: 373px;
+      margin-right: 13px;
     }
   }
 }
@@ -280,7 +287,7 @@
 .form__item-group {
 
   @include respond(desktop) {
-    padding-right: 43px;
+    padding-right: 58px;
 
     &:last-child {
       padding-right: 0;
@@ -536,7 +543,7 @@
     }
 
     @include respond(desktop) {
-      margin-right: 60px;
+      margin-right: 58px;
       display: flex;
       justify-content: space-between;
     }

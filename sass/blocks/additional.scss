@@ -65,6 +65,7 @@
     @include respond(desktop) {
       padding-top: 0;
       padding-bottom: 50px;
+      line-height: 1.7;
     }
   }
 
@@ -74,7 +75,7 @@
     }
 
     @include respond(desktop) {
-      padding-bottom: 84px;
+      padding-bottom: 60px;
     }
   }
 }

@@ -1,7 +1,7 @@
 .form-photo {
   margin-top: 0;
   background-color: $light-gray-color;
-  
+
   @include respond(tablet) {
     margin-top: 15px;
   }
@@ -14,7 +14,7 @@
 
 .form-photo__inner {
   @include clearfix;
-  
+
   @include respond(tablet) {
     padding: 0 2*$indent-help;
   }
@@ -32,10 +32,15 @@
   padding-top: $indent-help;
   padding-bottom: $indent-help;
   background-color: $light-gray-color;
-  
+
   @include respond(tablet) {
     display: flex;
     padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @include respond(desktop) {
+    padding-top: 56px;
     padding-bottom: 55px;
   }
 }
@@ -47,7 +52,8 @@
 
   @include respond(desktop) {
     .form__item {
-      margin-left: 10px;
+      margin-top: 2px;
+      margin-left: 5px;
     }
   }
 }
@@ -63,7 +69,7 @@
 
   @include respond(desktop) {
     width: 50%;
-    margin-left: 19px;
+    margin-left: 14px;
   }
 }
 
@@ -75,7 +81,7 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: #124578;
-  
+
   @include respond(mobile) {
     margin-bottom: 40px;
   }
@@ -107,21 +113,21 @@
   width: 50px;
   height: 50px;
   margin: 0 15px 4px;
-  
+
   svg {
     @include zero-centered;
     fill: rgba($brand-color, 0.3);
   }
-  
+
   &:hover {
     svg {
       fill: rgba($brand-color, 0.5);
     }
   }
-  
+
   @include respond(tablet) {
     margin-left: 0;
-    
+
     svg {
       fill: $main-brand-color;
 
@@ -130,7 +136,7 @@
       }
     }
   }
-  
+
   @include respond(tablet-only) {
     float: left;
     width: 24px;
@@ -138,7 +144,7 @@
     margin-right: 12px;
     margin-left: 5px;
     margin-top: 10px;
-    
+
     &[for="contrast"] {
       svg {
         width: 18px;
@@ -156,13 +162,13 @@
 .form-photo__input {
   &--radio {
       display: none;
-    
+
     &:checked ~ label {
       svg {
         fill: $main-brand-color;
       }
     }
-    
+
     @include respond(mobile) {
       &:checked ~ .scale-slider {
         display: block;
@@ -177,7 +183,7 @@
 
   &--range {
     display: none;
-    
+
     @include respond(tablet) {
       float: right;
     }

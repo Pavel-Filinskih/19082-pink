@@ -5,19 +5,23 @@
 .photos__list {
   @include ul-clear;
   font-size: 0;
-  
+
   @include respond(tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @include respond(desktop) {
+    justify-content: space-around;
+  }
 }
 
 .photos__item {
   margin-bottom: 21px;
   background-color: $light-gray-color;
-  
+
   @include respond(tablet) {
     width: 48.387%;
     min-height: 350px;
@@ -26,11 +30,11 @@
     justify-content: space-between;
     align-items: stretch;
   }
-  
+
   @include respond(tablet-only) {
     min-height: 450px;
   }
-  
+
   @include respond(desktop) {
     width: 300px;
     min-height: 555px;
@@ -42,7 +46,7 @@
   margin: 0;
   margin-bottom: 18px;
   background-color: $light-gray-color;
-  
+
   @include respond(tablet) {
     margin-bottom: 48px;
 
@@ -89,11 +93,11 @@
   img {
     width: 100%;
     height: auto;
-    
+
     @include respond(tablet-only) {
       min-height: 300px;
     }
-    
+
     @include respond(desktop) {
       min-height: 400px;
     }
@@ -113,18 +117,18 @@
       text-transform: uppercase;
       color: $light-color;
       background-color: $main-brand-color;
-      
+
       @include respond(tablet-only) {
         right: 2*$indent-help;
         top: 55px;
       }
-      
+
       @include respond(desktop) {
-        right: 11%;
-        top: 55px;
+        right: 13%;
+        top: 77px;
       }
     }
-    
+
     img {
       @include respond(tablet-only) {
         min-height: 510px;
@@ -140,7 +144,7 @@
 .photos__content {
   padding: 20px 18px 25px;
   font-size: $font-size-base;
-  
+
   @include respond(tablet) {
     flex-grow: 1;
     display: flex;
@@ -148,6 +152,13 @@
     justify-content: space-between;
     align-content: space-between;
     padding: 30px;
+  }
+
+  @include respond(desktop) {
+    padding-left: 25px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 29px;
   }
 }
 
@@ -164,7 +175,7 @@
 .photos__description {
   line-height: $line-height;
   margin-bottom: 13px;
-  
+
   @include respond(tablet) {
     margin-bottom: auto;
   }
@@ -179,7 +190,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $main-brand-color;
-  
+
   @include respond(tablet) {
     padding-left: 0;
     padding-right: 0;
@@ -198,11 +209,11 @@
   width: 15px;
   height: 15px;
   margin-right: 15px;
-  
+
   svg {
     fill: $main-brand-color;
   }
-  
+
   @include respond(tablet) {
     order: 2;
     margin-left: 15px;
