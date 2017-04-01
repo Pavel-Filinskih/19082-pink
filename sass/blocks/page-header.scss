@@ -99,6 +99,7 @@
 
   @include respond(desktop) {
     min-height: 155px;
-    padding-top: 60px;
+    padding-top: 61px;
+    padding-right: 25px;
   }
 }

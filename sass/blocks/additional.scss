@@ -7,7 +7,7 @@
   padding: 45px 0 50px;
   text-align: center;
   line-height: $line-height + 0.4;
-  
+
   @include respond(tablet) {
     padding-right: 55px;
     padding-left: 55px;
@@ -16,13 +16,13 @@
     font-size: 18px;
     line-height: $line-height;
   }
-  
+
   @include respond(tablet-only) {
     br {
       display: none;
     }
   }
-  
+
   @include respond(desktop) {
     padding-right: 80px;
     padding-left: 80px;
@@ -30,7 +30,7 @@
     padding-bottom: 75px;
     line-height: $line-height;
   }
-  
+
   &--br {
     @include respond(tablet-only) {
       br {
@@ -38,7 +38,7 @@
       }
     }
   }
-  
+
   &--concurs {
     padding-bottom: 25px;
 
@@ -47,6 +47,8 @@
     }
 
     @include respond(desktop) {
+      padding-top: 88px;
+      padding-right: 84px;
       padding-bottom: 75px;
     }
   }
@@ -54,23 +56,23 @@
   &--second {
     padding-top: 22px;
     padding-bottom: 40px;
-    
+
     @include respond(tablet-only) {
       padding-top: 45px;
       padding-bottom: 50px;
     }
-    
+
     @include respond(desktop) {
       padding-top: 0;
       padding-bottom: 50px;
     }
   }
-  
+
   &--photo {
     @include respond(tablet-only) {
       padding-bottom: 75px;
     }
-    
+
     @include respond(desktop) {
       padding-bottom: 84px;
     }

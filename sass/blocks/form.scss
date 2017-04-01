@@ -94,14 +94,20 @@
     }
 
     @include respond(desktop) {
-      flex-basis: 436px;
+      flex-basis: 443px;
       box-sizing: border-box;
-      padding-top: 5px;
+      padding-top: 10px;
 
       .form__item {
         &:last-child {
           margin-bottom: 20px;
         }
+      }
+
+      .form__label {
+        margin-left: 0;
+        margin-right: 19px;
+        padding-left: 7px;
       }
     }
   }
@@ -134,13 +140,14 @@
     }
 
     @include respond(desktop) {
-      flex-basis: 276px;
-      padding-left: 78px;
-      padding-right: 78px;
-      padding-top: 55px;
+      flex-basis: 282px;
+      padding-left: 75px;
+      padding-right: 86px;
+      padding-top: 50px;
       margin-bottom: 60px;
 
       .form__legend {
+        top: -19px;
         left: 30px;
         transform: none;
       }
@@ -392,6 +399,10 @@
       padding-left: 58px;
     }
 
+    @include respond(desktop) {
+      padding-top: 11px;
+    }
+
     input[type="radio"] {
       display: none;
       position: absolute;
@@ -492,6 +503,11 @@
     transform: translateX(-50%);
     background-color: $light-color;
   }
+
+  @include respond(desktop) {
+    top: -19px;
+    left: 475px;
+  }
 }
 
 .form__submit {
@@ -508,7 +524,9 @@
     }
 
     @include respond(desktop) {
+      display: block;
       margin-bottom: 0;
+      overflow: hidden;
     }
   }
 
@@ -530,6 +548,12 @@
 
   @include respond(tablet) {
     font-size: 14px;
+  }
+
+  @include respond(desktop) {
+    float: right;
+    margin-top: 28px;
+    margin-right: 13px;
   }
 }
 
