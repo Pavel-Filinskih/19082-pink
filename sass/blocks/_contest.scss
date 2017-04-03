@@ -1,0 +1,34 @@
+.contest {
+  overflow: hidden;
+  padding-top: 45px;
+
+  @include tablet {
+    padding-top: 92px;
+  }
+}
+
+.contest__promo-text {
+  @include container;
+
+  margin-bottom: 34px;
+  line-height: 30px;
+  text-align: center;
+
+  &--extend {
+    display: none;
+  }
+
+  @include tablet {
+    width: 500px;
+    margin-bottom: 71px;
+    font-size: 18px;
+
+    &--extend {
+      display: inline;
+    }
+  }
+
+  @include desktop {
+    width: 770px;
+  }
+}

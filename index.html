@@ -1,510 +1,296 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Пинк</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-      <symbol id="icon-no" viewBox="0 0 26.752 26.752"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></symbol><symbol id="icon-review-arrow-left" viewBox="0 0 21.706 41.719"><path d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></symbol><symbol id="icon-review-arrow-right" viewBox="0 0 21.706 41.719"><path d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/></symbol><symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></symbol>
-    </svg>
     <header class="page-header">
-      <div class="page-header__up">
-        <div class="page-header__up-inner">
-          <h1 class="visually-hidden">Pink &mdash; крутые фото</h1>
-          <div class="page-header__logo">
-            <a href="index.html" class="page-header__logo-link">
-              <svg version="1.1" class="logo-svg  logo-svg--tablet  logo-svg--small" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                  <g>
-                    <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
-                    <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
-                    <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
-                    <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
-                  </g>
-                  <g class="small-hidden">
-                    <path fill="#FFFFFF" d="M60.498,28.266"/>
-                    <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
-                  </g>
-                </svg>
-                <svg version="1.1" class="logo-svg  logo-svg--desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                  <g>
-                    <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
-                    <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
-                    <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
-                    <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
-                  </g>
-                  <path fill="#D22856" d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z"/>
-                  <g>
-                    <path fill="#FFFFFF" d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z"/>
-                    <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z"/>
-                  </g>
-                  <g>
-                    <g>
-                      <path fill="#D22856" d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z"/>
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path fill="#D22856" d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z"/>
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
-                    </g>
-                  </g>
-                </svg>
+      <h1 class="page-header__title  visually-hidden">Приложение "Pink"</h1>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__inner">
+            <a class="main-nav__logo-link">
+              <svg class="main-nav__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375"><path class="main-nav__logo-word" d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zm13.615-11.141c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.287-1.288 1.287-.676 0-1.255-.579-1.255-1.287v-20.283zm9.141.032c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45v-16.998c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256v-20.285h-.002zm25.429-.032c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894c0 .708-.578 1.288-1.286 1.288-.677 0-1.257-.58-1.257-1.288v-20.285h-.004z" fill="#fff"/><path class="main-nav__logo-shine" fill="#D22856" d="M98.498 9.875c-2.002 0-3.623-1.623-3.623-3.624 0 2.001-1.623 3.624-3.625 3.624 2.002 0 3.625 1.623 3.625 3.624 0-2.001 1.621-3.624 3.623-3.624z"/><path class="main-nav__logo-glasses  main-nav__logo-glasses--desktop" d="M43.094 19.313c.246 0 .489.014.73.033-.437-.728-1.227-1.221-2.136-1.221-.877 0-1.614-.568-1.884-1.354-.727.208-1.425.482-2.089.816l.188.038c1.104 0 2 .896 2 2l-.028.281c1-.382 2.084-.593 3.219-.593zm17.368 8.703l-5.175-21.365c-.361-2.348-2.593-6.651-8.599-6.651-.829 0-1.5.671-1.5 1.5s.671 1.5 1.5 1.5c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.445-3.557-2.453-6.628-5.305-8.522-.897.379-1.529 1.269-1.529 2.303l-.026.256c1.991 1.358 3.415 3.489 3.829 5.964.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.147-.878.427-1.711.808-2.483-1.034-.078-1.852-.932-1.852-1.985 0-.189-.077-.357-.192-.489-.938 1.469-1.569 3.15-1.795 4.958h-1.82c-.741-5.927-5.802-10.531-11.927-10.531s-11.185 4.602-11.927 10.529h-2.073l4.767-19.701c.063-.414.783-4.143 5.639-4.143.829 0 1.5-.671 1.5-1.5s-.671-1.5-1.5-1.5c-6.006 0-8.238 4.303-8.599 6.651l-5.175 21.365c-.266 1.109.531 1.826 1.426 1.826l.036.004h3.982c.079.628.215 1.237.387 1.831.059-.106.102-.224.102-.354 0-1.104.896-2 2-2 .166 0 .324.025.478.063-.043-.343-.074-.688-.074-1.042 0-.512.053-1.011.135-1.5.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.715 4.272-4.421 7.531-8.896 7.531-2.022 0-3.883-.67-5.386-1.794-.35.302-.8.491-1.299.491-.413 0-.749.336-.749.748 0 .29-.065.564-.176.812 2.075 1.708 4.722 2.743 7.614 2.743 6.125 0 11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53h3.981l.036-.004c.895.001 1.692-.716 1.426-1.825z" fill="#fff"/><path class="main-nav__logo-glasses  main-nav__logo-glasses--tablet" fill="#fff" d="M60.462 28.016l-5.175-21.365c-.361-2.348-2.593-6.651-8.599-6.651-.829 0-1.5.671-1.5 1.5s.671 1.5 1.5 1.5c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531s-11.185 4.604-11.927 10.531h-2.073l4.767-19.701c.063-.414.783-4.143 5.639-4.143.829 0 1.5-.671 1.5-1.5s-.671-1.5-1.5-1.5c-6.006 0-8.238 4.303-8.599 6.651l-5.175 21.365c-.266 1.109.531 1.826 1.426 1.826l.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53h3.982l.036-.004c.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/><path class="main-nav__logo-shine" fill="#D22856" d="M50.686 16.125c-2.485 0-4.499-2.014-4.499-4.499 0 2.485-2.014 4.499-4.499 4.499 2.485 0 4.499 2.014 4.499 4.499 0-2.485 2.013-4.499 4.499-4.499zm-12.782 3.501c-1.519 0-2.749-1.23-2.749-2.749 0 1.519-1.23 2.749-2.749 2.749 1.519 0 2.749 1.229 2.749 2.749 0-1.52 1.231-2.749 2.749-2.749zm-27.17 14.446c-1.519 0-2.749-1.23-2.749-2.75 0 1.52-1.23 2.75-2.749 2.75 1.519 0 2.749 1.229 2.749 2.748 0-1.517 1.23-2.748 2.749-2.748z"/>
+              </svg>
             </a>
+
+            <button class="main-nav__toggle">Открыть меню</button>
           </div>
-          <nav class="main-nav main-nav--no-js">
-            <button class="main-nav__toggler  main-nav__toggler--close" type="button" id="navToggler">
-              <svg version="1.0" id="menuCross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-                  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-                </svg>
-                <svg version="1.0" id="menuBurger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-                  <g id="miu">
-                    <g id="editor_list_view_hambuger_menu_glyph">
-                      <g>
-                        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                      </g>
-                      <g>
-                        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-            </button>
-            <ul class="main-nav__list" id="mainNav">
-              <li class="main-nav__item  main-nav__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" target="_blank" rel="noopener noreferrer">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="page-header__inner">
-        <div class="promo-hand">
-          <div class="promo-hand__img">
-            <picture>
-                <source
-                  media="(min-width: 960px)"
-                  srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-                <source
-                  media="(min-width: 660px)"
-                  srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-                <img
-                  src="img/iphone-hand-mobile@1x.png" alt=""
-                  srcset="img/iphone-hand-mobile@2x.png 2x">
-              </picture>
-          </div>
-        </div>
-        <div class="applications">
-          <h2 class="applications__title">
-            Взгляните на&nbsp;жизнь иначе!
-          </h2>
-          <a class="btn btn--applications-load" href="#" target="_blank" rel="noopener noreferrer">
-            Скачать приложение
-          </a>
-          <ul class="applications__list">
-            <li class="applications__item">
-              <a class="applications__link  applications__link--mac" href="#" target="_blank" rel="noopener noreferrer">Mac</a>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--active">Главная</a>
             </li>
-            <li class="applications__item">
-              <a class="applications__link  applications__link--android" href="#" target="_blank" rel="noopener noreferrer">Android</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
-            <li class="applications__item">
-              <a class="applications__link  applications__link--windows" href="#" target="_blank" rel="noopener noreferrer">Windows</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-          <p class="applications__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
+        </nav>
+      </div>
+
+      <div class="page-header__demo-wrapper">
+        <picture>
+          <source
+            media="(min-width: 960px)"
+            srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source
+            media="(min-width: 660px)"
+            srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="page-header__demo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="pink-demo">
+        </picture>
       </div>
     </header>
-    <div class="main">
-      <section class="information">
-        <div class="information__introduction">
-          <p class="information__inner">
-              Устали от серости мегаполиса?
-              Нам есть, что вам<br>
-              предложить!
+
+    <main>
+      <section class="download">
+        <h2 class="download__title  visually-hidden">Загрузка "Pink"</h2>
+
+        <div class="download__inner">
+          <p class="download__call-text">Взгляните на жизнь иначе!</p>
+
+          <a href="#" class="download__default-link  alternate-btn  alternate-btn--download">Скачать приложение</a>
+
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link  download__link--apple" href="#">Для Apple</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link  download__link--android" href="#">Для Android</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link  download__link--windows" href="#">Для Windows</a>
+            </li>
+          </ul>
+
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2 class="advantages__title  visually-hidden">О приложении</h2>
+
+        <div class="advantages__tagline-wrapper">
+          <p class="advantages__tagline">
+            <span class="advantages__tagline-text">Устали от серости мегаполиса?</span>
+            <span class="advantages__tagline-text">Нам есть, что вам предложить!</span>
           </p>
         </div>
-        <div class="information__details">
-          <svg class="information__decorator" version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-              <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-            </svg>
-          <div class="information__content">
-            <div class="information__inner">
-              <ul class="information__list">
-                <li class="information__item">
-                  <div class="information__image">
-                    <picture>
-                      <source
-                        media="(min-width: 960px)"
-                        srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-                      <img
-                        src="img/iphone-screen-1-tablet@1x.png" alt=""
-                        srcset="img/iphone-screen-1-tablet@2x.png 2x">
-                      </picture>
-                  </div>
-                  <h2 class="information__title">Поднимает настроение</h2>
-                  <p class="information__text">
-                    Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                  </p>
-                </li>
-                <li class="information__item">
-                  <div class="information__image">
-                    <picture>
-                        <source
-                          media="(min-width: 960px)"
-                          srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-                        <img
-                          src="img/iphone-screen-2-tablet@1x.png" alt=""
-                          srcset="img/iphone-screen-2-tablet@2x.png 2x">
-                      </picture>
-                  </div>
-                  <h2 class="information__title">Меняет мир вокруг</h2>
-                  <p class="information__text">
-                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-                  </p>
-                </li>
-                <li class="information__item">
-                  <div class="information__image">
-                    <picture>
-                        <source
-                          media="(min-width: 960px)"
-                          srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-                        <img
-                          src="img/iphone-screen-3-tablet@1x.png" alt=""
-                          srcset="img/iphone-screen-3-tablet@2x.png 2x">
-                      </picture>
-                  </div>
-                  <h2 class="information__title">Заводит новых друзей</h2>
-                  <p class="information__text">
-                    Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="investigation">
-        <div class="investigation__inner  investigation__inner--timer">
-          <div class="investigation__timer">
-            <div class="investigation__time">
-              24
-            </div>
-          </div>
-          <div class="investigation__content">
-            <div class="investigation__title">
-              Эффект <br>на&nbsp;24&nbsp;часа!
-            </div>
-            <p class="investigation__text">
-              Британские ученые провели исследования и доказали,<br>
-              что положительный эффект от использования приложения
-              длится целые сутки!
-            </p>
-            <a href="" class="investigation__link">
-              Узнать больше об исследовании
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__inner"  id="reviewsSlider">
-          <ul class="reviews__content  slider  slider--no-js">
-            <li class="slider__item  reviews__item  reviews__item--active">
-              <div class="reviews__author">
-                <div class="reviews__author-name">Николай Петров</div>
-                <div class="reviews__author-additional">
-                  25 лет, водитель трамвая
-                </div>
-              </div>
-              <p class="reviews__text">
-                <span class="reviews__quote  reviews__quote--hidden">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote  reviews__quote--hidden">»</span>
+
+        <div class="advantages__list-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__item-heading">Поднимает настроение</h3>
+              <p class="advantages__item-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="slider__item  reviews__item">
-              <div class="reviews__author">
-                <div class="reviews__author-name">Петр Николаевский</div>
-                <div class="reviews__author-additional">
-                  45 лет, преподаватель
-                </div>
-              </div>
-              <p class="reviews__text">
-                <span class="reviews__quote  reviews__quote--hidden">«</span>Осень – не время грустить! Преображаются леса и парки, воздух наполняется ароматами прелой листвы, настроение становится по-осеннему философским и утонченным.<span class="reviews__quote  reviews__quote--hidden">»</span>
+            <li class="advantages__item">
+              <h3 class="advantages__item-heading">Меняет мир вокруг</h3>
+              <p class="advantages__item-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
-            <li class="slider__item  reviews__item">
-              <div class="reviews__author">
-                <div class="reviews__author-name">Марк Угольков</div>
-                <div class="reviews__author-additional">
-                  28 лет, любитель
-                </div>
-              </div>
-              <p class="reviews__text">
-                <span class="reviews__quote  reviews__quote--hidden">«</span>Для меня камера в мобильном телефоне – это иное восприятие окружающего мира. Есть масса интереснейших вещей вокруг нас, которые мы можем увидеть с ее помощью.<span class="reviews__quote  reviews__quote--hidden">»</span>
+            <li class="advantages__item">
+              <h3 class="advantages__item-heading">Заводит новых друзей</h3>
+              <p class="advantages__item-text">
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
               </p>
             </li>
           </ul>
-          <div class="slider-toggles">
-            <span class="slider-toggles__toggle  slider-toggles__toggle--active"></span>
-            <span class="slider-toggles__toggle"></span>
-            <span class="slider-toggles__toggle"></span>
-          </div>
-          <div class="slider-controls  reviews__controls">
-            <a class="slider-controls__control  slider-controls__control--prev">
-              <svg width="22" height="41">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-left"></use>
-                </svg>
-            </a>
-            <a class="slider-controls__control  slider-controls__control--next">
-              <svg width="22" height="41">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-right"></use>
-                </svg>
-            </a>
+        </div>
+
+        <div class="advantages__research-wrapper">
+          <div class="advantages__research-inner">
+            <div class="advantages__research">
+              <h3 class="advantages__research-heading">
+                <span class="advantages__research-break">Эффект</span> на 24 часа!
+              </h3>
+
+              <p class="advantages__research-text">Британские ученые провели исследования и
+                доказали, что положительный эффект от использования приложения длится целые сутки!
+              </p>
+
+              <a href="#" class="advantages__research-link">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title  visually-hidden">Отзывы</h2>
+
+        <div class="reviews__slider">
+          <button class="reviews__slider-toggle  reviews__slider-toggle--prev"></button>
+
+          <ul class="reviews__list">
+            <li class="reviews__item  reviews__item--active">
+              <blockquote class="reviews__blockquote">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-description">25 лет, водитель трамвая</p>
+
+                <p class="reviews__text">
+                  <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                  по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной
+                  фотографии!<span class="reviews__quotes">»</span>
+                </p>
+              </blockquote>
+            </li>
+
+            <li class="reviews__item">
+              <blockquote class="reviews__blockquote">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-description">25 лет, водитель трамвая</p>
+
+                <p class="reviews__text">
+                  <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                  по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной
+                  фотографии!<span class="reviews__quotes">»</span>
+                </p>
+              </blockquote>
+            </li>
+
+            <li class="reviews__item">
+              <blockquote class="reviews__blockquote">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-description">25 лет, водитель трамвая</p>
+
+                <p class="reviews__text">
+                  <span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило
+                  по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной
+                  фотографии!<span class="reviews__quotes">»</span>
+                </p>
+              </blockquote>
+            </li>
+          </ul>
+
+          <button class="reviews__slider-toggle  reviews__slider-toggle--next"></button>
+
+          <div class="reviews__controls  slider-controls">
+            <button class="slider-controls__toggle  slider-controls__toggle--active" type="button"></button>
+            <button class="slider-controls__toggle" type="button"></button>
+            <button class="slider-controls__toggle" type="button"></button>
+          </div>
+        </div>
+      </section>
+
       <section class="price">
-        <svg class="price__decorator price__decorator--white" version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-            <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-          </svg>
-        <div class="price__inner">
-          <div class="slider  slider--no-js  price__content">
-            <div class="price__helper  slider__item">
-              <table class="price__table  price__table--active2">
-                <tr>
-                  <th></th>
-                  <th class="price__name">
-                    <span class="price__name-title">База</span>
-                    <div class="price__count">1,99 <span class="price__currency">USD</span></div>
-                  </th>
-                  <th class="price__name  price__name--hit">
-                    <div class="price__hit">
-                      <span class="price__name-title">Стандарт</span>
-                      <div class="price__count">3,99 <span class="price__currency">USD</span></div>
-                    </div>
-                  </th>
-                  <th class="price__name">
-                    <span class="price__name-title">Анлим</span>
-                    <div class="price__count">9,99 <span class="price__currency">USD</span></div>
-                  </th>
-                </tr>
-                <tr>
-                  <td class="price__option  price__option--mobile-hidden">
-                    Розовый фильтр
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Розовый фильтр</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Розовый фильтр</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Розовый фильтр</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="price__option  price__option--mobile-hidden">
-                    Смайлики
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Смайлики</span>
-                    <span class="price__marker  price__marker--no">
-                      <svg width="27" height="26">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Смайлики</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Смайлики</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="price__option  price__option--mobile-hidden">
-                    Комментарии
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Комментарии</span>
-                    <span class="price__marker  price__marker--no">
-                      <svg width="27" height="26">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Комментарии</span>
-                    <span class="price__marker  price__marker--no">
-                      <svg width="27" height="26">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
-                        </svg>
-                    </span>
-                  </td>
-                  <td class="price__option">
-                    <span class="price__option-name">Комментарии</span>
-                    <span class="price__marker  price__marker--yes">
-                      <svg width="31" height="21">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
-                        </svg>
-                    </span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="slider-toggles  slider-toggles--gray">
-              <span class="slider-toggles__toggle"></span>
-              <span class="slider-toggles__toggle slider-toggles__toggle--active"></span>
-              <span class="slider-toggles__toggle"></span>
-            </div>
+        <h2 class="price__title  visually-hidden">Стоимость</h2>
+
+        <div class="price__slider">
+          <table class="price__table">
+            <tr>
+              <td class="price__name  price__name--extend"></td>
+              <td class="price__name">
+                <span class="price__package">База</span>
+                <span class="price__total">1,99 USD</span>
+              </td>
+              <td class="price__name  price__name--popular">
+                <span class="price__package">Стандарт</span>
+                <span class="price__total">3,99 USD</span>
+              </td>
+              <td class="price__name">
+                <span class="price__package">Анлим</span>
+                <span class="price__total">9,99 USD</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__option  price__option--extend">Розовый фильтр</td>
+              <td class="price__option  price__option--yes">Розовый фильтр</td>
+              <td class="price__option  price__option--yes">Розовый фильтр</td>
+              <td class="price__option  price__option--yes">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="price__option  price__option--extend">Смайлики</td>
+              <td class="price__option  price__option--no">Смайлики</td>
+              <td class="price__option  price__option--yes">Смайлики</td>
+              <td class="price__option  price__option--yes">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="price__option  price__option--extend">Комментарии</td>
+              <td class="price__option  price__option--no">Комментарии</td>
+              <td class="price__option  price__option--no">Комментарии</td>
+              <td class="price__option  price__option--yes">Комментарии</td>
+            </tr>
+          </table>
+
+          <div class="price__controls  slider-controls">
+            <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
+            <button class="slider-controls__toggle  slider-controls__toggle--active
+              slider-controls__toggle--price" type="button"></button>
+            <button class="slider-controls__toggle  slider-controls__toggle--price" type="button"></button>
           </div>
         </div>
       </section>
-      <section class="contacts">
+    </main>
+
+    <footer class="page-footer">
+      <div class="contacts">
+        <h2 class="contacts__title  visually-hidden">Контакты</h2>
+
         <div class="contacts__inner">
-          <div class="contacts__title">
-            Остались вопросы?<br>
-            Свяжитесь с нами!
-          </div>
+          <p class="contacts__tagline">Остались вопросы? Свяжитесь с нами!</p>
+
           <ul class="contacts__list">
             <li class="contacts__item">
-              <div class="contacts__name">
-                Звоните:
-              </div>
-              <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+              <h3 class="contacts__item-heading">Звоните:</h3>
+              <a class="contacts__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
+
             <li class="contacts__item">
-              <div class="contacts__name">
-                Пишите:
-              </div>
-              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+              <h3 class="contacts__item-heading">Пишите:</h3>
+              <a class="contacts__item-text  contacts__item-text--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
+
             <li class="contacts__item">
-              <div class="contacts__name">
-                Приезжайте в гости:
-              </div>
-              <a href="map.html" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+              <h3 class="contacts__item-heading">Приезжайте в гости:</h3>
+              <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
             </li>
           </ul>
         </div>
-      </section>
-      <div class="map">
-        <svg class="map__decorator" version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
-            <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
-          </svg>
-        <div class="map__inner  map__inner--responsive">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1475521128357" width="800" height="600" style="border:0" allowfullscreen></iframe>
-        </div>
+
+        <div class="contacts__map" id="contacts-map"></div>
       </div>
-    </div>
-    <footer class="page-footer  page-footer--mobile-none">
-      <div class="page-footer__inner">
-        <div class="page-footer__logo">
-          <a href="index.html">
-            <svg version="1.1" class="logo-svg  logo-svg--tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                <g>
-                  <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
-                  <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
-                  <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z"/>
-                  <path fill="#283645" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.16 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
-                </g>
-                <path fill="#FFFFFF" d="M60.498,28.266"/>
-                <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
-              </svg>
-              <svg version="1.1" class="logo-svg  logo-svg--desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                <g>
-                  <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
-                  <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
-                  <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z"/>
-                  <path fill="#283645" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
-                </g>
-                <path fill="#D22856" d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z"/>
-                <g>
-                  <path fill="#D22856" d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z"/>
-                  <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.965c0.082,0.488,0.135,0.987,0.135,1.5c0,0.512-0.053,1.012-0.135,1.5 c-0.716,4.271-4.421,7.53-8.896,7.53c-4.475,0-8.181-3.259-8.896-7.53c-0.082-0.488-0.135-0.988-0.135-1.5 c0-0.513,0.053-1.012,0.135-1.5c0.147-0.879,0.427-1.712,0.808-2.484c-1.034-0.077-1.852-0.932-1.852-1.984 c0-0.189-0.077-0.357-0.192-0.488c-0.938,1.469-1.569,3.149-1.795,4.957h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.629,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.024,0.478,0.062c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.289-0.065,0.563-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.529h1.814c0.742,5.926,5.802,10.529,11.927,10.529s11.186-4.604,11.927-10.529H59 c0.012,0,0.023-0.005,0.036-0.005C59.931,29.842,60.728,29.125,60.462,28.016z"/>
-                </g>
-                <g>
-                  <g>
-                    <path fill="#283645" d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z"/>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path fill="#283645" d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z"/>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path fill="#283645" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
-                  </g>
-                </g>
-              </svg>
-          </a>
-        </div>
-        <div class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--vk" href="" target="_blank" rel="noopener noreferrer">vk</a>
-            <a class="social-link social-link--facebook" href="" target="_blank" rel="noopener noreferrer">social-link--facebook</a>
-            <a class="social-link social-link--youtube" href="" target="_blank" rel="noopener noreferrer">youtube</a>
-          </span>
-        </div>
+
+      <div class="page-footer__inner  page-footer__inner--main-page">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375"><g class="page-footer__logo-word" fill="#283645"><path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.063c0 4.86-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.287-1.289 1.287-.676 0-1.256-.58-1.256-1.287l.002-20.119zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.002zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.287-1.288 1.287-.676 0-1.255-.579-1.255-1.287v-20.283zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45v-16.998c0-.676.547-1.256 1.256-1.256.676 0 1.225.58 1.225 1.256v20.349c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.936-.321-1.318-.772l-13.976-17.867v17.449c0 .677-.547 1.257-1.257 1.257-.676 0-1.223-.58-1.223-1.257v-20.285h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.401-10.464-4.863 4.861v4.895c0 .708-.578 1.288-1.286 1.288-.677 0-1.257-.58-1.257-1.288v-20.286h-.006z"/></g><path class="page-footer__logo-shine" fill="#D22856" d="M98.498 9.875c-2.002 0-3.623-1.623-3.623-3.624 0 2.001-1.623 3.624-3.625 3.624 2.002 0 3.625 1.623 3.625 3.624 0-2.001 1.621-3.624 3.623-3.624z"/><g fill="#D22856"><path class="page-footer__logo-glasses  page-footer__logo-glasses--desktop" d="M43.094 19.313c.246 0 .489.014.73.033-.437-.728-1.227-1.221-2.136-1.221-.877 0-1.614-.568-1.884-1.354-.727.208-1.425.482-2.089.816l.188.038c1.104 0 2 .896 2 2l-.028.281c1-.382 2.084-.593 3.219-.593zM60.462 28.016l-5.175-21.365c-.361-2.348-2.593-6.651-8.599-6.651-.829 0-1.5.671-1.5 1.5s.671 1.5 1.5 1.5c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.445-3.557-2.453-6.628-5.305-8.522-.897.379-1.529 1.269-1.529 2.303l-.026.256c1.991 1.358 3.415 3.489 3.829 5.965.082.488.135.987.135 1.5 0 .512-.053 1.012-.135 1.5-.716 4.271-4.421 7.53-8.896 7.53-4.475 0-8.181-3.259-8.896-7.53-.082-.488-.135-.988-.135-1.5 0-.513.053-1.012.135-1.5.147-.879.427-1.712.808-2.484-1.034-.077-1.852-.932-1.852-1.984 0-.189-.077-.357-.192-.488-.938 1.469-1.569 3.149-1.795 4.957h-1.82c-.741-5.927-5.802-10.531-11.927-10.531s-11.185 4.601-11.927 10.528h-2.073l4.767-19.701c.063-.414.783-4.143 5.639-4.143.829 0 1.5-.671 1.5-1.5s-.671-1.5-1.5-1.5c-6.006 0-8.238 4.303-8.599 6.651l-5.175 21.365c-.266 1.109.531 1.826 1.426 1.826l.036.004h3.982c.079.629.215 1.237.387 1.831.059-.106.102-.224.102-.354 0-1.104.896-2 2-2 .166 0 .324.024.478.062-.043-.343-.074-.688-.074-1.042 0-.512.053-1.011.135-1.5.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.715 4.272-4.421 7.531-8.896 7.531-2.022 0-3.883-.67-5.386-1.794-.35.302-.8.491-1.299.491-.413 0-.749.336-.749.748 0 .289-.065.563-.176.812 2.075 1.708 4.722 2.743 7.614 2.743 6.125 0 11.185-4.604 11.927-10.529h1.814c.742 5.926 5.802 10.529 11.927 10.529s11.186-4.604 11.927-10.529h3.981l.036-.005c.895.002 1.692-.715 1.426-1.824z"/><path class="page-footer__logo-glasses" fill="#D22856" d="M60.462 28.016l-5.175-21.365c-.361-2.348-2.593-6.651-8.599-6.651-.829 0-1.5.671-1.5 1.5s.671 1.5 1.5 1.5c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531s-11.185 4.604-11.927 10.531h-2.073l4.767-19.701c.063-.414.783-4.143 5.639-4.143.829 0 1.5-.671 1.5-1.5s-.671-1.5-1.5-1.5c-6.006 0-8.238 4.303-8.599 6.651l-5.175 21.365c-.266 1.109.531 1.826 1.426 1.826l.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53h3.982l.036-.004c.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531s-8.18-3.259-8.896-7.531c-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/></g><path class="page-footer__logo-shine" fill="#283645" d="M50.686 16.125c-2.485 0-4.499-2.014-4.499-4.499 0 2.485-2.014 4.499-4.499 4.499 2.485 0 4.499 2.014 4.499 4.499 0-2.485 2.013-4.499 4.499-4.499zM37.904 19.626c-1.519 0-2.749-1.23-2.749-2.749 0 1.519-1.23 2.749-2.749 2.749 1.519 0 2.749 1.229 2.749 2.749 0-1.52 1.231-2.749 2.749-2.749zM10.734 34.072c-1.519 0-2.749-1.23-2.749-2.75 0 1.52-1.23 2.75-2.749 2.75 1.519 0 2.749 1.229 2.749 2.748 0-1.517 1.23-2.748 2.749-2.748z"/>
+          </svg>
+        </a>
+
+        <ul class="page-footer__social  social">
+          <li class="social__item">
+            <a class="social__link  social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube" href="#">Youtube</a>
+          </li>
+        </ul>
+
         <div class="page-footer__copyright">
-          Разработано
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-              </svg>
-            </a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
+            <span class="page-footer__copyright-extend">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApqQ_HmEW4yXxaDLuWeLLZsMf7wG7XFqw&callback=initMap"></script>
   </body>
 </html>

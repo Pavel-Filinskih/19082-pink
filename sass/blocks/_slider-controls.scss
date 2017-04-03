@@ -1,0 +1,33 @@
+.slider-controls__toggle {
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  padding: 0;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: rgba($primary-dark, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--price {
+    border-color: $primary-light;
+  }
+
+  &--active {
+    background-color: #ffffff;
+    border: 3px solid $primary-dark;
+  }
+
+  &:hover:not(&--active) {
+    background-color: rgba($primary-dark, 0.5);
+  }
+
+  &:active:not(&--active) {
+    background-color: rgba($primary-dark, 0.1);
+  }
+}

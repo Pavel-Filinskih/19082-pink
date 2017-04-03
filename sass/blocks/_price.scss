@@ -1,0 +1,204 @@
+.price {
+  margin-bottom: 42px;
+  padding-top: 88px;
+  padding-bottom: 43px;
+  background-color: $primary-light;
+
+  @include tablet {
+    margin-bottom: 46px;
+    padding-bottom: 68px;
+  }
+
+  @include desktop {
+    margin-bottom: 64px;
+    padding-top: 154px;
+    padding-bottom: 95px;
+  }
+}
+
+.price__slider {
+  overflow: hidden;
+
+  @include tablet {
+    @include container;
+
+    min-height: 0;
+  }
+}
+
+.price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid $secondary-light;
+
+  @include tablet {
+    position: static;
+    transform: none;
+  }
+}
+
+.price__name {
+  position: relative;
+  min-width: 275px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  text-align: center;
+  border: 2px solid $secondary-light;
+  background-color: $primary-dark;
+  background-clip: padding-box;
+
+  &--extend {
+    display: none;
+  }
+
+  &--popular::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat;
+  }
+
+  &--popular::after {
+    content: "хит";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    transform: rotate(-45deg);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  @include tablet {
+    min-width: 125px;
+    padding-top: 11px;
+    padding-bottom: 8px;
+
+    &--popular::before {
+      top: -1px;
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    &--popular::after {
+      top: 6px;
+      left: 6px;
+    }
+
+    &--extend {
+      display: table-cell;
+      background-color: transparent;
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+
+  @include desktop {
+    min-width: 165px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+
+    &--popular::before {
+      background-image: url("../img/bg-hit.svg");
+    }
+
+    &--popular::after {
+      top: 13px;
+      left: 10px;
+    }
+  }
+}
+
+.price__package {
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include tablet{
+    font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.price__total {
+  display: block;
+  font: {
+    size: 24px;
+    weight: 300
+  }
+  line-height: 30px;
+  color: #ffffff;
+
+  @include tablet {
+    margin-top: -3px;
+    font-size: 18px;
+  }
+
+  @include desktop {
+    margin-top: 2px;
+    font-size: 24px;
+  }
+}
+
+.price__option {
+  padding: 15px 0 14px 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid $secondary-light;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 92.9% center;
+
+  &--extend {
+    display: none;
+  }
+
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+    background-size: 31px 21px;
+  }
+
+  &--no {
+    background-image: url("../img/icon-no.svg");
+  }
+
+  @include tablet {
+    padding: 7px 0 8px 14px;
+    text-transform: none;
+    background-position: center;
+
+    &--extend {
+      display: table-cell;
+    }
+
+    &:not(&--extend) {
+      font-size: 0;
+    }
+  }
+
+  @include desktop {
+    padding: 14px 0 15px 20px;
+    font-size: 18px;
+  }
+}
+
+.price__controls {
+  margin-top: 32px;
+  text-align: center;
+
+  @include tablet {
+    display: none;
+  }
+}

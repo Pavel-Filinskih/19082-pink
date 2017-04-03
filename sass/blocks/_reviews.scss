@@ -1,0 +1,165 @@
+.reviews {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    display: block;
+    width: 100%;
+    height: 31px;
+    background: url("../img/bg-triangle-white.svg") no-repeat 0 0 / 100% 100%;
+  }
+
+  @include tablet {
+    padding-top: 11px;
+    padding-bottom: 16px;
+
+    &::after {
+      bottom: -53px;
+      height: 53px;
+    }
+  }
+
+  @include desktop {
+    padding-top: 185px;
+    padding-bottom: 35px;
+    background: url("../img/icon-quotes.svg") no-repeat center 70px;
+
+    &::after {
+      bottom: -92px;
+      height: 92px;
+    }
+  }
+}
+
+.reviews__slider {
+  @include container;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.reviews__slider-toggle {
+  display: none;
+  width: 22px;
+  height: 41px;
+  margin-top: 28px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.3;
+  outline: none;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.reviews__list {
+  @include unlist;
+
+  @include desktop {
+    margin: auto;
+    width: 780px;
+  }
+}
+
+.reviews__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.reviews__blockquote {
+  margin: 0;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.reviews__author {
+  display: block;
+  margin-bottom: 13px;
+  font: {
+    size: 18px;
+    weight: 700;
+    style: normal;
+  }
+  line-height: 30px;
+  color: #000000;
+
+  @include tablet {
+    margin-bottom: 3px;
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-description {
+  display: none;
+  margin: 0;
+  line-height: 30px;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  line-height: 30px;
+
+  @include tablet {
+    order: -1;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+}
+
+.reviews__quotes {
+  @include desktop {
+    display: none;
+  }
+}
+
+.reviews__controls {
+  text-align: center;
+  margin-top: 25px;
+
+  @include desktop {
+    display: none;
+  }
+}

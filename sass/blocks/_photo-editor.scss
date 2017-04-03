@@ -1,0 +1,225 @@
+.photo-editor {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 400px;
+  }
+}
+
+.photo-editor__viewport {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.photo-editor__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+
+  @include tablet {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.photo-editor__controls {
+  @include unlist;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 211px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  @include tablet {
+    flex-direction: column;
+    width: 275px;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+  }
+
+  @include desktop {
+    width: 410px;
+    margin-top: -4px;
+  }
+}
+
+.photo-editor__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba($primary-dark, 0.1);
+  }
+
+  @include desktop {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.photo-editor__btn {
+  width: 48px;
+  height: 47px;
+  padding: 0;
+  border: none;
+  background: transparent no-repeat;
+  opacity: 0.3;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-position: -2px 2px;
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-position: 4px 8px;
+  }
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+    margin-left: 3px;
+    background-size: cover;
+    opacity: 1;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--crop {
+      background-image: url("../img/icon-editor-crop-active.svg");
+    }
+
+    &--fill {
+      background-image: url("../img/icon-editor-fill-active.svg");
+    }
+
+    &--contrast {
+      background-image: url("../img/icon-editor-contrast-active.svg");
+      background-size: 70%;
+      background-position-y: 4px;
+    }
+  }
+
+  @include desktop {
+    width: 48px;
+    height: 47px;
+  }
+}
+
+.photo-editor__btn--active.photo-editor__btn {
+  opacity: 1;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-active.svg");
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-active.svg");
+  }
+}
+
+.photo-editor__scale {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  width: 240px;
+  height: 2px;
+  background-color: $primary-dark;
+
+  &--hidden {
+    display: none;
+  }
+
+  @include tablet {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 200px;
+    margin-right: 18px;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    width: 289px;
+    margin-right: 28px;
+  }
+}
+
+.photo-editor__toggle {
+  position: absolute;
+  top: -6px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  background-color: $primary-light;
+  cursor: pointer;
+  transition: background 0.1s linear;
+
+  &--crop {
+    right: 35px;
+  }
+
+  &:active {
+    background-color: $primary;
+  }
+
+  @include tablet {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      right: 163px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+
+  @include desktop {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 27px;
+    }
+
+    &--contrast {
+      right: 114px;
+    }
+  }
+}
