@@ -1,0 +1,246 @@
+.main-nav {
+  background-color: $primary-dark;
+
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    background-color: transparent;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.main-nav__inner {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    padding-top: 28px;
+    padding-bottom: 42px;
+  }
+
+  @include desktop {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 27px;
+  }
+}
+
+.main-nav__logo-link {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 75px;
+  height: 24px;
+  line-height: 0;
+
+  @include tablet {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: -16px;
+  left: -71px;
+
+  @include tablet {
+    top: 0;
+    left: 0;
+  }
+}
+
+.main-nav__logo-glasses {
+  display: none;
+  transition: all 0.2s linear;
+
+  @include tablet {
+    &--tablet {
+      display: inline;
+    }
+  }
+
+  @include desktop {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+}
+
+.main-nav__logo-word {
+  transition: all 0.2s linear;
+}
+
+.main-nav__logo-shine {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.main-nav__logo-link:hover .main-nav__logo-word,
+.main-nav__logo-link:hover .main-nav__logo-glasses {
+  fill: $primary;
+}
+
+.main-nav__logo-link:active .main-nav__logo-word,
+.main-nav__logo-link:active .main-nav__logo-glasses {
+  fill: #ffffff;
+  fill-opacity: 0.3;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  outline: none;
+
+  &:hover {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+  }
+
+  &:active {
+    background: transparent url("../img/icon-menu-cross.svg");
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    margin-top: 16px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/icon-menu-burger.svg");
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-menu-burger.svg");
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list {
+  @include unlist;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 621px;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+  }
+
+  @include desktop {
+    border: none;
+
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font: {
+    size: 18px;
+    weight: 700;
+  }
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active:not(&--active) {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  @include desktop {
+    padding-top: 38px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    text-transform: none;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: background 0.2s linear;
+    }
+  }
+}
+
+.main-nav__link:hover.main-nav__link--active::after {
+  background-color: $primary;
+}

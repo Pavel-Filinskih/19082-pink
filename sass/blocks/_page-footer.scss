@@ -1,0 +1,143 @@
+.page-footer {
+  &--photo {
+    margin-top: -15px;
+  }
+
+  @include tablet {
+    &--photo {
+      margin-top: -49px;
+    }
+  }
+
+  @include desktop {
+    &--photo {
+      margin-top: 27px;
+    }
+  }
+}
+
+.page-footer__inner {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 41px;
+
+  &--main-page {
+    display: none;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 85px;
+    padding-bottom: 37px;
+
+    &--main-page {
+      display: flex;
+      padding-top: 35px;
+    }
+  }
+
+  @include desktop {
+    padding-top: 70px;
+    padding-bottom: 72px;
+  }
+}
+
+.page-footer__logo-link {
+  margin-bottom: 39px;
+  line-height: 0;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__logo {
+  transition: all 0.2s linear;
+}
+
+.page-footer__logo-word {
+  transition: all 0.2s linear;
+}
+
+.page-footer__logo-glasses {
+  &--desktop {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+}
+
+.page-footer__logo-shine {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.page-footer__logo-link:hover .page-footer__logo-word {
+  fill: $primary;
+}
+
+.page-footer__logo-link:active .page-footer__logo-word,
+.page-footer__logo-link:active .page-footer__logo {
+  fill: $primary-dark;
+  opacity: 0.3;
+}
+
+.page-footer__social {
+  @include tablet {
+    margin-top: 4px;
+    margin-right: 20px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    margin-left: 14px;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 34px;
+
+  @include tablet {
+    margin-top: 10px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.page-footer__copyright-link {
+  display: block;
+  padding: 8px 37px 6px 0;
+  text-decoration: none;
+  color: $primary-dark;
+  background: url("../img/logo-htmlacademy.svg") no-repeat right 5px / 28px 35px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-extend {
+  font-size: 0;
+}

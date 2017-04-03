@@ -1,0 +1,529 @@
+.contest-form {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.contest-form__fieldset {
+  @include container;
+
+  position: relative;
+  padding-bottom: 42px;
+  border: none;
+
+  &--achievement {
+    padding-top: 117px;
+    padding-bottom: 47px;
+  }
+
+  &--contacts {
+    padding-top: 32px;
+  }
+
+  &--app {
+    padding-top: 113px;
+    padding-bottom: 47px;
+  }
+
+  &--emotions {
+    padding-top: 72px;
+    padding-bottom: 48px;
+  }
+
+  @include tablet {
+    border-radius: 3px;
+
+    &--achievement {
+      box-sizing: border-box;
+      padding: 56px 0 53px;
+      margin-top: 65px;
+      border: 2px solid $secondary-light;
+    }
+
+    &--contacts {
+      order: 2;
+      box-sizing: border-box;
+      margin-top: 65px;
+      padding: 45px 58px 21px;
+      border: 2px solid $secondary-light;
+    }
+
+    &--app {
+      box-sizing: border-box;
+      margin-top: 24px;
+      padding: 56px 0 59px;
+      border: 2px solid $secondary-light;
+    }
+
+    &--emotions {
+      order: 4;
+      box-sizing: border-box;
+      margin-top: 65px;
+      padding: 45px 58px 51px;
+      border: 2px solid $secondary-light;
+    }
+  }
+
+  @include desktop {
+    &--user {
+      width: 435px;
+      margin: 0;
+      margin-top: 14px;
+      padding: 0;
+    }
+
+    &--achievement {
+      width: 940px;
+      padding-left: 58px;
+      padding-right: 50px;
+      padding-bottom: 7px;
+    }
+
+    &--contacts {
+      width: 940px;
+      margin-top: 65px;
+      padding-top: 42px;
+      padding-bottom: 8px;
+    }
+
+    &--app {
+      width: 435px;
+      margin-top: 8px;
+      padding-top: 57px;
+    }
+
+    &--emotions {
+      width: 940px;
+      padding-top: 42px;
+      padding-bottom: 43px;
+    }
+  }
+}
+
+.contest-form__fieldset-wrapper {
+  background-color: $primary-light;
+
+  @include tablet {
+    background-color: transparent;
+
+    &--app {
+      order: 1;
+    }
+
+    &--achievement {
+      order: 3;
+    }
+  }
+}
+
+.contest-form__legend {
+  position: absolute;
+  display: block;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary;
+
+  &--contacts {
+    display: none;
+  }
+
+  @include tablet {
+    top: -10px;
+    padding: 0 25px;
+    background-color: #ffffff;
+
+    &--app {
+      width: 368px;
+    }
+
+    &--contacts {
+      display: block;
+      width: 259px;
+    }
+
+    &--achievement {
+      width: 437px;
+    }
+
+    &--emotions {
+      width: 260px;
+    }
+  }
+}
+
+.contest-form__list {
+  @include unlist;
+
+  @include tablet {
+    &--achievements {
+      margin-left: 58px;
+    }
+
+    &--app {
+      margin-left: 58px;
+    }
+  }
+
+  @include desktop {
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &--achievements {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 165px;
+      margin-left: 0;
+    }
+  }
+}
+
+.contest-form__item {
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--achievement {
+    margin-bottom: 52px;
+  }
+
+  &--app {
+    margin-bottom: 45px;
+  }
+
+  @include tablet {
+    &--user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 52px;
+    }
+
+    &--contacts {
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 29px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        display: block;
+        width: 60px;
+        height: 59px;
+        background-color: $secondary-light;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--phone {
+      &::after {
+        background-image: url("../img/icon-phone.svg");
+      }
+    }
+
+    &--mail {
+      &::after {
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+
+  @include desktop {
+    &--contacts {
+      width: 375px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contest-form__text-label {
+  display: block;
+  margin-left: 22px;
+  margin-bottom: 5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $primary;
+
+  @include tablet {
+    &--user {
+      margin: 0;
+      margin-right: 18px;
+  }
+
+    &--contacts {
+      margin: 10px 0 0 19px;
+    }
+  }
+}
+
+.contest-form__text-field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 63px;
+  padding: 15px 20px 14px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $secondary-light;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.1s linear;
+
+  &::-webkit-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &::-moz-placeholder {
+    color: $primary-dark;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &:hover {
+    border-color: $primary-dark;
+  }
+
+  &:focus {
+    border-color: $primary;
+  }
+
+  @include tablet {
+    &--contacts {
+      padding-right: 80px;
+    }
+  }
+}
+
+.contest-form__char-extend {
+  @include tablet {
+    font-size: 0;
+  }
+}
+
+.contest-form__checkbox {
+  display: none;
+}
+
+.contest-form__checkbox-label {
+  position: relative;
+  width: 100%;
+  padding: 7px 0 8px 69px;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 2px solid $secondary-light;
+    border-radius: 3px;
+    transition: all 0.1s linear;
+  }
+
+  &:hover::before {
+    border-color: $primary-dark;
+  }
+
+  &:active::before {
+    border-color: $primary;
+  }
+
+  @include tablet {
+    padding-left: 59px;
+  }
+}
+
+.contest-form__checkbox:checked + .contest-form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  display: block;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-yes-pink.svg");
+}
+
+.contest-form__radio {
+  display: none;
+}
+
+.contest-form__radio-label {
+  position: relative;
+  padding: 7px 0 8px 69px;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+    border: 2px solid $secondary-light;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all 0.1s linear;
+  }
+
+  &:hover::before {
+    border-color: $primary-dark;
+  }
+
+  &:active::before {
+    border-color: $primary;
+  }
+
+  @include tablet {
+    padding-left: 59px;
+  }
+
+  @include desktop {
+    margin-left: 16px;
+    padding-left: 59px;
+  }
+}
+
+.contest-form__radio:checked + .contest-form__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $primary;
+}
+
+.contest-form__textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 201px;
+  padding: 15px 19px 0;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $secondary-light;
+  border-radius: 3px;
+  resize: none;
+  outline: none;
+  transition: all 0.1s linear;
+
+  &::-webkit-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &::-moz-placeholder {
+    color: $primary-dark;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $primary-dark;
+  }
+
+  &:hover {
+    border-color: $primary-dark;
+  }
+
+  &:focus {
+    border-color: $primary;
+  }
+
+  @include tablet {
+    min-height: 193px;
+  }
+
+  @include desktop {
+    min-height: 128px;
+  }
+}
+
+.contest-form__required-fields {
+  margin: 0;
+  margin-top: 35px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.contest-form__asterisk {
+  color: $primary;
+}
+
+.contest-form__required-extend {
+  display: none;
+
+  @include desktop{
+    display: inline;
+  }
+}
+
+.contest-form__btn-wrapper {
+  @include container;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 5;
+    margin-top: 67px;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin-top: 65px;
+    padding: 0;
+  }
+}
+
+.contest-form__btn {
+  min-width: 280px;
+  cursor: pointer;
+
+  @include tablet {
+    min-width: 300px;
+  }
+}
