@@ -87,9 +87,9 @@
   padding-bottom: 287px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 109% / 157px 320px;
 
-  @include retina {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
-  }
+  // @include retina {
+  //   background-image: url("../img/iphone-screen-mobile@2x.png");
+  // }
 
   @include tablet {
     display: flex;
